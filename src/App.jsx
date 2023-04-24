@@ -68,7 +68,7 @@ function App() {
       console.log(user) 
       console.log(users)
       users.forEach(item => {
-        if (item.ci !== user.ci) {
+        if (item.ci !== user?.ci) {
           setUsers([...users, user])
           localStorage.setItem('users', JSON.stringify([...users, user]))
         }
@@ -91,7 +91,7 @@ function App() {
       let array = [user, ...users]
       console.log(array)
       let hash = {};
-      array = array.filter(o => hash[o.ci] ? false : hash[o.ci] = true)
+      array = array.filter(o => hash[o?.ci] ? false : hash[o?.ci] = true)
       console.log(array)
 
       setUsers(array)

@@ -35,7 +35,7 @@ const Mesa = ({ users, mesa, handleRoom, handleDisconnect, handleErase }) => {
                     clientes &&
                     clientes?.map((cliente, index) => (
                         <Cliente
-                            key={cliente.ci}
+                            key={index}
                             cliente={cliente}
                             handleRoom={handleRoom}
                             handleDisconnect={handleDisconnect}
