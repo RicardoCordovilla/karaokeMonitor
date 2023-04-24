@@ -84,7 +84,7 @@ function App() {
 
     socket.on('server-receive-message', (user) => {
       console.log(user)
-      setDisplayMessage('mesa: ' + user.mesa + ' dice: ' + JSON.stringify(user?.pedidos))
+      setDisplayMessage('mesa: ' + user?.mesa + ' dice: ' + JSON.stringify(user?.pedidos))
 
 
 

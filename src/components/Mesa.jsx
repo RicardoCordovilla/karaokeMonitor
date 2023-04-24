@@ -22,7 +22,7 @@ const Mesa = ({ users, mesa, handleRoom, handleDisconnect, handleErase }) => {
     useEffect(() => {
         // console.log(users[0].mesa, mesa + '')
         // console.log(users.filter(item => item.mesa == mesa + ''))
-        setClientes(users.filter(item => item.mesa == mesa + ''))
+        setClientes(users.filter(item => item?.mesa == mesa + ''))
     }, [users])
 
 
