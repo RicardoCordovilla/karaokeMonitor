@@ -40,7 +40,7 @@ const Cliente = ({ cliente, handleRoom, handleDisconnect, handleErase }) => {
             </div>
             <div className="pedidos">
                 {
-                    cliente.pedidos &&
+                    cliente?.pedidos &&
                     cliente?.pedidos.map(item => (
                         <Item key={item} numero={item} />
                     ))
